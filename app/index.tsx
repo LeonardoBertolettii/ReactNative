@@ -1,6 +1,11 @@
-import { Text, View,StyleSheet,Image } from "react-native";
+import ButtonApp from "@/components/ButtonApp";
+import InputApp from "@/components/InputApp";
+
+import { Text, View,StyleSheet,Image, Button } from "react-native";
+
 
 export default function Index() {
+  const name = `ted`
   return (
     <View
       style={{
@@ -9,13 +14,8 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Ted</Text>
-    
+      
+      
     </View>
   );
-  const styles = StyleSheet.create({
-    image: {
-
-    }
-  })
 }
