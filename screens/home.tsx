@@ -7,7 +7,7 @@ import CardDeafio from "@/components/CardDesafios";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 
-export default function Index() {
+export default function home() { 
   const[nome,setNome] = useState('')
   const[value,setValue] = useState('')
   return ( 
