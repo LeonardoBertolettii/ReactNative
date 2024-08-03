@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Button, Text,StyleSheet, TextComponent, View, Image, Modal } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import ButtonApp from "@/components/ButtonApp";
 
 
 export default function desafio1(){
@@ -31,13 +32,16 @@ export default function desafio1(){
     }
     return(
     <GestureHandlerRootView>
-
     <View style={styles.screen}>
-        <Text>cadastro</Text>
+        <Text style={{alignSelf:`flex-start`,fontSize:30,marginLeft:5,fontWeight:`bold`}}>Cadastro</Text>
         <InputApp placeHolder={'Nome'} text={setName}/>
-        <InputApp placeHolder={'Idade'} text={setAge}/>   
-        <Button title="Homem" onPress={()=>setSex('Homem')}/>
-        <Button title="Mulher" onPress={()=>setSex('Mulher')}/>
+        <InputApp placeHolder={'Idade'} text={setAge}/>  
+        <View style={{flexDirection:`row`,width:`auto`}}>
+        <ButtonApp  placeHolder={`Homem`} onPress={()=>setSex(`Homem`)}/>
+        <ButtonApp  placeHolder={`Homem`} onPress={()=>setSex(`Homem`)}/>
+        </View>
+        
+       
         <Button title="Salvar" onPress={saveData}/>
         <Button title="Ver perfil" onPress={()=>SetVisible(true)}/>
         <Modal transparent={true} animationType="slide" visible={modalVisible}>
