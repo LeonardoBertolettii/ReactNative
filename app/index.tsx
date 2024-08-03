@@ -22,7 +22,7 @@ export default function Index() {
       }}
       >
       <Text style={{textAlign:'center'}}>Objetivo desta aplicação e demonstrar oq aprendi e apliquei nas aulas da udemy sobre react native</Text>
-      <Link href={'../screens/test'}>
+      <Link href={'/screens/desafio1'}>
       <CardDeafio title="Desafio 1" text='Desafio do banco que issoojncqijnciqncqicnqi ihebwiqv'/>
       <InputApp></InputApp>
       </Link>
