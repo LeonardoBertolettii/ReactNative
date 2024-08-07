@@ -37,11 +37,6 @@ export default function desafio1(){
         <InputApp placeHolder={'Nome'} text={setName}/>
         <InputApp placeHolder={'Idade'} text={setAge}/>  
         <View style={{flexDirection:`row`,width:`auto`}}>
-        <ButtonApp  placeHolder={`Homem`} onPress={()=>setSex(`Homem`)}/>
-        <ButtonApp  placeHolder={`Homem`} onPress={()=>setSex(`Homem`)}/>
-        </View>
-        
-       
         <Button title="Salvar" onPress={saveData}/>
         <Button title="Ver perfil" onPress={()=>SetVisible(true)}/>
         <Modal transparent={true} animationType="slide" visible={modalVisible}>
@@ -50,7 +45,14 @@ export default function desafio1(){
                         <Button title="Fechar" onPress={()=>{SetVisible(false)}}/>               
                 </View>
         </Modal>
-    </View>
+        </View>
+        <View style={{flexDirection:`row`,width:`auto`}}>
+        <ButtonApp  placeHolder={`Homem`} onPress={()=>setSex(`Homem`)}/>
+        <ButtonApp  placeHolder={`Mulher`} onPress={()=>setSex(`Mulher`)}/>
+        </View>
+        <Button title="Test"></Button>
+        <Text>{name}{age}{sex}</Text>  
+        </View>
     </GestureHandlerRootView>
     )
 }
@@ -63,7 +65,12 @@ const styles = StyleSheet.create({
         
     },
     button:{
-        justifyContent:'flex-end'
+        width:`90%`,
+        height:35,
+        backgroundColor:`green`,
+        justifyContent: "center",
+        alignItems: "center",
+        borderRadius: 10
     },
     textTitle:{
         alignSelf:'flex-start',

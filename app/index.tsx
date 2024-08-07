@@ -12,6 +12,9 @@ export default function Index() {
   const[value,setValue] = useState('')
   return ( 
     <GestureHandlerRootView>
+        <View style={{justifyContent:'flex-start',marginTop:25}}>
+        <Text style={{textAlign:'center',fontSize:20}}>Objetivo desta aplicação é demonstrar oque aprendi nas aulas da udemy sobre react native</Text>
+        </View>
     <View
       style={{
         flex:1,
@@ -21,10 +24,8 @@ export default function Index() {
         
       }}
       >
-      <Text style={{textAlign:'center'}}>Objetivo desta aplicação e demonstrar oq aprendi e apliquei nas aulas da udemy sobre react native</Text>
       <Link href={'/screens/desafio1'}>
-      <CardDeafio title="Desafio 1" text='Desafio do banco que issoojncqijnciqncqicnqi ihebwiqv'/>
-      <InputApp></InputApp>
+      <CardDeafio title="Desafio Banco" text='O desafio prático era fazer uma tela de login que retornasse os dados de cadastro em forma de alerta. O objetivo era praticar coisas como useState, Input, alert e async.'/>
       </Link>
     </View>
     </GestureHandlerRootView>
